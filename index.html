@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Virtual Herbal Garden</h1>
+        <h1>MEDICINAL PLANTS IN HEALTHCARE</h1>
+        <nav>
+            <ul>
+                <li><a href="#Skin Diseases">Skin Diseases</a></li>
+                <li><a href="#Hypertension">Hypertension</a></li>
+                <li><a href="#Diabetes">Diabetes</a></li>
+                <li><a href="#Menstrual Disorders">Menstrual Disorders</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Herbal medicinal plants have a long-standing role in healthcare, providing natural remedies that support disease prevention, treatment, and overall well-being. With the increasing interest in holistic and alternative medicine, many people turn to these plants for their healing potential, especially in managing chronic conditions, boosting the immune system, and improving general health. </h2>
+        <section id="Menstrual Disorders">
+            <h2>Menstrual Disorders</h2>
+            <div class="plant" onclick="showDetails('Rosemary')">
+                <img src="imag1.jpeg" alt="Rosemary" class="plant-based">
+                <h3>Rosemary</h3>
+                <p>Rosemary is used for curing Menstrual Disorders, sprains, arthritic pain, and muscle aches. A highly diluted form of arnica is used in homeopathic remedies.</p>
+            </div>
+            <div class="plant" onclick="showDetails('Yarrow')">
+                <img src="image2.jpeg" alt="Yarrow" class="plant-based">
+                <h3>Yarrow</h3>
+                <p>Yarrow Mother Tincture is an effective homeopathic remedy for the treatment of multiple health complications including Menstrual disorders such as ringworm and respiratory disorder such as asthma and bronchitis</p>
+            </div>
+        </section>
+
+        <section id="Skin Diseases"></section>
+            <h2>Medicinal plants for Skin Diseases</h2>
+            <div class="plant" onclick="showDetails('Cassiasophera')">
+                <img src="imagee3.jpeg" alt="Calotropis procera" class="plant-based">
+                <h3>Calotropis procera</h3>
+                <p> It is widespread in Saudi Arabia's arid desert regions. Locally, it is called “Oshar”, and the plant's latex has historically been used to treat a variety of skin conditions, including psoriasis, leishmaniasis, and skin infections</p>
+            </div>
+            <div class="plant" onclick="showDetails('Achyranthesaspera')">
+                <img src="img4.jpeg" alt="Achyranthes aspera" class="plant-based">
+                <h3>Achyranthes aspera</h3>
+                <p>The root paste of Achyranthes aspera helps to reduce itching, skin rashes when applied externally due to its property of balancing Vata and Kapha.</p>        
+    </div>
+        </section>
+        <section id="Hypertension">
+            <h2>Medicinal plants in the treatment of hypertension</h2>
+            <div class="plant" onclick="showDetails('ChineseSage')">
+                <img src="img5.jpeg" alt="Chinese Sage (Salvia miltiorrhiza)" class="plant-based">
+                <h3>Chinese Sage (Salvia miltiorrhiza)</h3>
+                <p>A traditional Chinese herb, Salvia miltiorrhiza, has been revealed to have cardioprotective effects on animals and humans. </p>
+            </div>
+            <h2>Medicinal plants in the treatment of hypertension</h2>
+            <div class="plant" onclick="showDetails('Greaterburdock')">
+                <img src ="img6.jpeg" alt="Greater burdock (Arctium Lappa)" class="plant-image">
+                <h3>Greater burdock (Arctium Lappa)</h3>
+                <p>Burdock is used for the treatment of HTN. This plant has reactive oxygen species (ROS) scavenging action, is able to inhibit vascular inflammation, and can stimulate vasorelaxation.</p>
+            </div>
+            
+        </section>
+
+        <section id="Diabetes">
+            <h2>Medicinal plants in the treatment of Diabetes</h2>
+            <div class="plant" onclick="showDetails('Neem')">
+                <img src ="img7.jpeg" alt="neem" class ="plant-based">
+                <h3>Neem</h3>
+                <p>Neem (Azadirachta indica) is a tree that grows in tropical regions such as India. The leaf extract is used to reduce tooth plaque and to treat lice.</p>
+            </div>
+            <div class="plant" onclick="showDetails('Momordicacharantia')">
+                <img src="img8.jpeg" alt="Momordica charantia" class="plant-based">
+                <h3>Momordica charantia</h3>
+                <p>Momordica charantia is a popular fruit used for the treatment of diabetes, cardiovascular diseases, and related conditions amongst the indigenous population of Asia, South America, and East Africa.</p>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>©️ 2024 Virtual Herbal Garden</p>
+    </footer>
+
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="plantName"></h2>
+            <p id="plantInfo"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
